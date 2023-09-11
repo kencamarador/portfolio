@@ -29,10 +29,11 @@ This project consisted of the following services
 
 These steps outline the general approach I took to complete this project. While not providing an in-depth look into each step, they serve as a valuable starting point for anyone looking to initiate a similar project.
 
-### Prerequisites
+### Step 1: Creating an Azure Automation Account
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Azure Automation provides a cloud-based automation solution that supports the management of operating system updates and configurations. It ensures consistent control and oversight across both your Azure and non-Azure environments.
+
+Please click [this](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal) on how to create and set up your Azure Automation Account.
+
+
+* 
