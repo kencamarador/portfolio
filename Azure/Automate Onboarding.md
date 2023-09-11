@@ -42,7 +42,7 @@ Please click [this](https://learn.microsoft.com/en-us/azure/automation/automatio
 
 Azure Automation Runbooks usually run in the Azure cloud, which can limit their access to resources outside Azure or on-premises. To address this, Azure Automation provides the Hybrid Runbook Worker feature, allowing you to run runbooks on the machine hosting the role for local resource interaction. In my scenario, I ran the runbook on our Domain Controller due to our Hybrid Azure setup. These runbooks are managed in Azure Automation and then sent to assigned machines for execution.
 
-Head over to your Automation Account and under "Process Automation", select "Hybrid Worker Groups". Then select "+ Create hybrid worker group". Follow this [guide](https://learn.microsoft.com/en-us/azure/automation/extension-based-hybrid-runbook-worker-install?tabs=windows%2Cbicep-template) below more details. 
+Head over to your Automation Account and under "Process Automation", select "Hybrid Worker Groups". Then select "+ Create hybrid worker group". Follow this [guide](https://learn.microsoft.com/en-us/azure/automation/extension-based-hybrid-runbook-worker-install?tabs=windows%2Cbicep-template#create-hybrid-worker-group) below more details. 
 
 ![Hybrid Worker Group](https://learn.microsoft.com/en-us/azure/automation/media/extension-based-hybrid-runbook-worker-install/hybrid-worker-groups-portal.png)
 
