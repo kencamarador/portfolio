@@ -18,12 +18,12 @@ Here's why:
 
 This project consisted of the following services
 
-* ![Azure](https://img.shields.io/badge/Azure-Automate-blue)
-* ![Azure](https://img.shields.io/badge/Azure-Runbook-blue)
-* ![Azure](https://img.shields.io/badge/Azure-Logic_Apps-blue)
-* ![Azure](https://img.shields.io/badge/Azure-AD-blue)
-* ![Azure](https://img.shields.io/badge/Microsoft-Active_Directory-blue)
-* ![Azure](https://img.shields.io/badge/Microsoft-Forms-blue)
+![Azure](https://img.shields.io/badge/Azure-Automate-blue)
+![Azure](https://img.shields.io/badge/Azure-Runbook-blue)
+![Azure](https://img.shields.io/badge/Azure-Logic_Apps-blue)
+![Azure](https://img.shields.io/badge/Azure-AD-blue)
+![Azure](https://img.shields.io/badge/Microsoft-Active_Directory-blue)
+![Azure](https://img.shields.io/badge/Microsoft-Forms-blue)
 
 
 
