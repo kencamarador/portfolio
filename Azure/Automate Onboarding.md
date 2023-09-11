@@ -120,6 +120,12 @@ This form serves as the section where either the manager or HR representative wi
 
 You can learn how to create a form [here](https://support.microsoft.com/en-us/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d). Ensure that you create this form using the same account you are using to build this application, as it needs to be accessible within your Logic Apps during the next step.
 
+### Step 6: Create a Logic App
+
+Azure Logic Apps is a cloud-based platform that empowers you to design and execute automated workflows effortlessly, even if you have minimal coding skills. Using its intuitive visual designer and a range of prebuilt operations, you can swiftly construct workflows that seamlessly connect and oversee your applications, data, services, and systems.
+
+
+
 
 ## Key Takeaways
 
@@ -134,3 +140,4 @@ You can learn how to create a form [here](https://support.microsoft.com/en-us/of
 * Instead of incorporating a "password" entry field in the Forms, explore a secure solution for automatic password generation to mitigate potential security concerns.
 * Integrate automation for adding users to groups based on their selected department, ensuring that the appropriate security groups are assigned accordingly.
 * Implement an automated email generation process to notify employees and other stakeholders once their accounts have been successfully created.
+* Use Infrastructure-as-Code (IaC) such as Terraform for efficient application development.
