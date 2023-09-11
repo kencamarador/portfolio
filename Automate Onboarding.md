@@ -1,0 +1,1 @@
+Onboard Automator (Manage Azure identities and governance)
