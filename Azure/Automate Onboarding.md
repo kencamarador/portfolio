@@ -98,7 +98,7 @@ New-ADUser -Name $displayname `
    
    ```
 
-Include the domain service account in the Automation Account Credentials, making sure to use the format domain\user, as demonstrated below.
+Include the domain service account in the Automation Account Credentials, making sure to use the format domain\user, as demonstrated below. Navigate to Automation Group > Credentials.
 
 ![Image Alt Text](../Images/Runbook2.png)
 
@@ -114,6 +114,11 @@ To diagnose errors like permission issues or syntax problems, you can initiate a
 ![Image Alt Text](../Images/Runbook.png)
 
 
+### Step 5: Create a Microsoft Form
+
+This form serves as the section where either the manager or HR representative will input the new employee's details. While more information is typically needed beyond what's provided here, these fields were included solely for testing purposes.
+
+You can learn how to create a form [here](https://support.microsoft.com/en-us/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d). Ensure that you create this form using the same account you are using to build this application, as it needs to be accessible within your Logic Apps during the next step.
 
 
 ## Key Takeaways
