@@ -41,3 +41,8 @@ Please click [this](https://learn.microsoft.com/en-us/azure/automation/automatio
 
 Azure Automation Runbooks usually run in the Azure cloud, which can limit their access to resources outside Azure or on-premises. To address this, Azure Automation provides the Hybrid Runbook Worker feature, allowing you to run runbooks on the machine hosting the role for local resource interaction. In my scenario, I ran the runbook on our Domain Controller due to our Hybrid Azure setup. These runbooks are managed in Azure Automation and then sent to assigned machines for execution.
 
+Head over to your Automation Account and under "Process Automation", select "Hybrid Worker Groups". Then select "+ Create hybrid worker group". Follow the guide below more details. 
+
+![Hybrid Worker Group](https://learn.microsoft.com/en-us/azure/automation/media/extension-based-hybrid-runbook-worker-install/hybrid-worker-groups-portal.png)
+
+When you reach the point of adding a machine, you'll have the option to include Azure virtual machines, Azure Arc-enabled servers, or Azure Arc-enabled VMware vSphere (preview). However, you might observe that there are no devices available for addition to your Hybrid Worker Group. This is because in my scenerio, we need to ensure that Azure Arc Connected Machine Agent is installed on the Domain Controller
