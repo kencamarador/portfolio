@@ -18,7 +18,7 @@ Here's why:
 
 This project consisted of the following services
 
-* [![Azure][Next.js]][https://user-images.githubusercontent.com/25181517/183911544-95ad6ba7-09bf-4040-ac44-0adafedb9616.png]
+* ![Azure](https://img.shields.io/badge/Automate-blue)
 
 
 
