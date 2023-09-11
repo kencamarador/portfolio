@@ -35,5 +35,4 @@ Azure Automation provides a cloud-based automation solution that supports the ma
 
 Please click [this](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal) on how to create and set up your Azure Automation Account.
 
-
-* 
+![Automation Account](https://learn.microsoft.com/en-us/azure/automation/media/automation-create-standalone-account/automation-account-portal.png)
