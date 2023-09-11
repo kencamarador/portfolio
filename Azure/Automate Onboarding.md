@@ -36,3 +36,8 @@ Azure Automation provides a cloud-based automation solution that supports the ma
 Please click [this](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal) on how to create and set up your Azure Automation Account.
 
 ![Automation Account](https://learn.microsoft.com/en-us/azure/automation/media/automation-create-standalone-account/automation-account-portal.png)
+
+### Step 2: Create a Hybrid Worker Group
+
+Azure Automation Runbooks usually run in the Azure cloud, which can limit their access to resources outside Azure or on-premises. To address this, Azure Automation provides the Hybrid Runbook Worker feature, allowing you to run runbooks on the machine hosting the role for local resource interaction. In my scenario, I ran the runbook on our Domain Controller due to our Hybrid Azure setup. These runbooks are managed in Azure Automation and then sent to assigned machines for execution.
+
