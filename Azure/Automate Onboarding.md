@@ -54,6 +54,10 @@ I used the Azure Portal to generate me a script that automates the downloading a
 
 You can follow this [guide](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-connected-machine-agent?tabs=WindowsScript#generate-an-installation-script) which shows you exactly how to retrieve the script and how to install the agent. 
 
+Once agenet has been added you can go back to adding the newly added Worker Device.
+
+<img src="Images/Hybrid Worker.png"/>
+
 
 
 
