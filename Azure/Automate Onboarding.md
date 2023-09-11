@@ -5,9 +5,9 @@
 Handling user accounts, especially in a large company, can be a very repetitive and time-consuming task. As the person responsible for creating all these accounts, I realized that we needed a simpler and faster way to bring new employees onboard. That's why I suggested automating and improving our onboarding process.
 
 Here's why:
-* Time Efficiency: Automation can significantly reduce the time required to create user accounts. This means new employees can access the systems they need more quickly, boosting overall productivity.
-* Accuracy and Consistency: Automated processes are less prone to human error. By using automation, you can ensure that each user account is created with consistent and accurate information, reducing the risk of issues and security vulnerabilities.
-* Resource Savings: By automating repetitive tasks, you free up human resources to focus on more strategic and value-added activities. This can lead to cost savings and improved utilization of your IT team's skills and expertise.
+* Time Efficiency: By automating and streamlining our user account creation process, we'll be able to save a significant amount of time and effort. This means our new employees can get up and running faster, allowing us to operate more efficiently as a whole.
+* Accuracy and Consistency: Automation ensures that every user account is created with precision and consistency. This reduces the chances of errors or discrepancies in user profiles, enhancing our data quality and overall security.
+* Resource Savings: Automating repetitive tasks will free up our IT team's valuable time and skills. This can be channeled into more strategic projects, ultimately leading to resource savings and a more productive IT department.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
