@@ -58,10 +58,60 @@ Once agenet has been added you can go back to adding the newly added Worker Devi
 
 ![Image Alt Text](../Images/Hybrid%20Worker.png)
 
+### Step 4: Create a Runbook
+
+I talked about Runbooks in Step 2. Runbooks are stored and managed in Azure Automation and then delivered to one or more designated Hybrid Worker computers. Please see guide [here](https://learn.microsoft.com/en-us/azure/automation/media/automation-tutorial-runbook-textual/create-powershell-workflow-runbook-options.png) on how to create a new Runbook
+
+![Runbook](https://learn.microsoft.com/en-us/azure/automation/media/automation-tutorial-runbook-textual/create-powershell-workflow-runbook-options.png)
+
+This PowerShell script creates a new Active Directory user with specified attributes like name, username, display name, city, phone number, and password, placing the user in the "Users" container of the "cam.local" domain.
+
+   ```powershell
+   param (
+    [parameter(Mandatory=$true)]
+    [string] $firstname,
+    [parameter(Mandatory=$true)]
+    [string] $lastname,
+    [parameter(Mandatory=$true)]
+    [string] $city,
+    [parameter(Mandatory=$true)]
+    [string] $phone,
+    [parameter(Mandatory=$true)]
+    [string] $pw
+)
+
+$displayname = $firstname + " " + $lastname
+$upn = "$firstname.$lastname" + "@cam.local"
+New-ADUser -Name $displayname `
+-SamAccountName "$firstname.$lastname" `
+-UserPrincipalName $upn `
+-DisplayName $displayname `
+-GivenName $firstname `
+-Surname $lastname `
+-City $city `
+-OfficePhone $phone `
+-AccountPassword (ConvertTo-SecureString $pw -AsPlainText -Force) `
+-Enabled:$true `
+-Server cam-dc-01 `
+-Path "CN=Users,DC=cam,DC=local"
+
+   
+   ```
+
+Include the domain service account in the Automation Account Credentials, making sure to use the format domain\user, as demonstrated below.
+
+![Image Alt Text](../Images/Runbook2.png)
+
+Set up the Hybrid Worker Group to utilize the designated run as account during execution.
+
+Navigate to Hybrid Worker Groups > Settings > Enable Custom for Run As, and then choose the appropriate credential from the dropdown menu.
+
+![Image Alt Text](../Images/Runbook3.png)
 
 
+To diagnose errors like permission issues or syntax problems, you can initiate a test run of your runbook by clicking the 'Start' button.
 
-
+![Image Alt Text](../Images/Runbook.png)
 
 
 
@@ -78,4 +128,4 @@ Once agenet has been added you can go back to adding the newly added Worker Devi
 * Opt for triggering the Logic App via email, aligning with our current organizational practice.
 * Instead of incorporating a "password" entry field in the Forms, explore a secure solution for automatic password generation to mitigate potential security concerns.
 * Integrate automation for adding users to groups based on their selected department, ensuring that the appropriate security groups are assigned accordingly.
-* Implement an automated email generation process to notify employees once their accounts have been successfully created.
+* Implement an automated email generation process to notify employees and other stakeholders once their accounts have been successfully created.
