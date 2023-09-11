@@ -37,6 +37,7 @@ Please click [this](https://learn.microsoft.com/en-us/azure/automation/automatio
 
 ![Automation Account](https://learn.microsoft.com/en-us/azure/automation/media/automation-create-standalone-account/automation-account-portal.png)
 
+
 ### Step 2: Create a Hybrid Worker Group
 
 Azure Automation Runbooks usually run in the Azure cloud, which can limit their access to resources outside Azure or on-premises. To address this, Azure Automation provides the Hybrid Runbook Worker feature, allowing you to run runbooks on the machine hosting the role for local resource interaction. In my scenario, I ran the runbook on our Domain Controller due to our Hybrid Azure setup. These runbooks are managed in Azure Automation and then sent to assigned machines for execution.
@@ -49,5 +50,23 @@ When you reach the point of adding a machine, you'll have the option to include 
 
 ### Step 3: Install the Azure Connected Machine agent on Domain Controller to enable Azure Arc
 
+I used the Azure Portal to generate me a script that automates the downloading and installation of the agent and establishes the connection with Azure Arc.
+
+You can follow this [guide](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-connected-machine-agent?tabs=WindowsScript#generate-an-installation-script) which shows you exactly how to retrieve the script and how to install the agent. 
 
 
+
+
+## Key Takeaways
+
+* Ensure you possess the necessary permissions for your resource groups; otherwise, you won't be able to add role assignments to your automation account.
+* In your Logic App, be certain to include a Hybrid Automation Worker Group in the "Create a job" section.
+* When working with your runbook script, meticulously check for typos and eliminate any trailing spaces that could potentially lead to runbook failures.
+* If you intend to create a user in the default "user" Organizational Unit (OU), the path should be specified as: CN="Users".
+
+## Next Steps and Future Improvements
+
+* Opt for triggering the Logic App via email, aligning with our current organizational practice.
+* Instead of incorporating a "password" entry field in the Forms, explore a secure solution for automatic password generation to mitigate potential security concerns.
+* Integrate automation for adding users to groups based on their selected department, ensuring that the appropriate security groups are assigned accordingly.
+* Implement an automated email generation process to notify employees once their accounts have been successfully created.
