@@ -45,4 +45,9 @@ Head over to your Automation Account and under "Process Automation", select "Hyb
 
 ![Hybrid Worker Group](https://learn.microsoft.com/en-us/azure/automation/media/extension-based-hybrid-runbook-worker-install/hybrid-worker-groups-portal.png)
 
-When you reach the point of adding a machine, you'll have the option to include Azure virtual machines, Azure Arc-enabled servers, or Azure Arc-enabled VMware vSphere (preview). However, you might observe that there are no devices available for addition to your Hybrid Worker Group. This is because in my scenerio, we need to ensure that Azure Arc Connected Machine Agent is installed on the Domain Controller
+When you reach the point of adding a machine, you'll have the option to include Azure virtual machines, Azure Arc-enabled servers, or Azure Arc-enabled VMware vSphere (preview). However, you might observe that there are no devices available for addition to your Hybrid Worker Group. This is because in my scenerio, we need to ensure that Azure Arc Connected Machine Agent is installed on the Domain Controller. Once this is installed, it will then populate on the list of devices to add. Let's go ahead and learn how to install Azure Arc.
+
+### Step 3: Install the Azure Connected Machine agent on Domain Controller to enable Azure Arc
+
+
+
