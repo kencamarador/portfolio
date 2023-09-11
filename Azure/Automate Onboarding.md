@@ -56,7 +56,8 @@ You can follow this [guide](https://learn.microsoft.com/en-us/azure/network-watc
 
 Once agenet has been added you can go back to adding the newly added Worker Device.
 
-<img src="Images/Hybrid Worker.png"/>
+![Image Alt Text](Images/Hybrid%20Worker.png)
+
 
 
 
