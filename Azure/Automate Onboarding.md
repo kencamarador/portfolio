@@ -59,7 +59,7 @@ You can follow this [guide](https://learn.microsoft.com/en-us/azure/network-watc
 
 ## Key Takeaways
 
-* Ensure you possess the necessary permissions for your resource groups; otherwise, you won't be able to add role assignments to your automation account.
+* You'll come across numerous access/permission issues, view the logs and the error codes that appear to troubleshoot. For example - ensure you have the necessary permissions for your resource groups; otherwise, you won't be able to add role assignments to your automation account.
 * In your Logic App, be certain to include a Hybrid Automation Worker Group in the "Create a job" section.
 * When working with your runbook script, meticulously check for typos and eliminate any trailing spaces that could potentially lead to runbook failures.
 * If you intend to create a user in the default "user" Organizational Unit (OU), the path should be specified as: CN="Users".
