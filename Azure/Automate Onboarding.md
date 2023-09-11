@@ -54,7 +54,7 @@ I used the Azure Portal to generate me a script that automates the downloading a
 
 You can follow this [guide](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-connected-machine-agent?tabs=WindowsScript#generate-an-installation-script) which shows you exactly how to retrieve the script and how to install the agent. 
 
-Once an agent has been added, you can proceed to add the newly added worker device.
+Once the agent has been added, you can proceed to add the newly added worker device.
 
 ![Image Alt Text](../Images/Hybrid%20Worker.png)
 
@@ -94,8 +94,6 @@ New-ADUser -Name $displayname `
 -Enabled:$true `
 -Server cam-dc-01 `
 -Path "CN=Users,DC=cam,DC=local"
-
-   
    ```
 
 Include the domain service account in the Automation Account Credentials, making sure to use the format domain\user, as demonstrated below. Navigate to Automation Group > Credentials.
@@ -124,8 +122,11 @@ You can learn how to create a form [here](https://support.microsoft.com/en-us/of
 
 Azure Logic Apps is a cloud-based platform that empowers you to design and execute automated workflows effortlessly, even if you have minimal coding skills. Using its intuitive visual designer and a range of prebuilt operations, you can swiftly construct workflows that seamlessly connect and oversee your applications, data, services, and systems.
 
+You can get fancy here and have the option to incorporate additional triggers or steps for more complexity, but for the sake of simplicity in this project, I've included only the following steps:
 
+![Image Alt Text](../Images/LogicApp.png)
 
+Upon form submission, it will initiate the Runbook, commencing the account creation process in your On-Premises Active Directory and subsequently synchronizing it with Azure Active Directory!
 
 ## Key Takeaways
 
@@ -133,6 +134,7 @@ Azure Logic Apps is a cloud-based platform that empowers you to design and execu
 * In your Logic App, be certain to include a Hybrid Automation Worker Group in the "Create a job" section.
 * When working with your runbook script, meticulously check for typos and eliminate any trailing spaces that could potentially lead to runbook failures.
 * If you intend to create a user in the default "user" Organizational Unit (OU), the path should be specified as: CN="Users".
+* If you're interested in setting up your own Active Directory and Azure AD, please visit my [Github](https://github.com/kencamarador/portfolio/tree/main/Azure), where I'll be sharing a guide on how to accomplish this. **Remember to test any changes thoroughly on non-production systems before implementing them in a production environment.**
 
 ## Next Steps and Future Improvements
 
