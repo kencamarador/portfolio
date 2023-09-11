@@ -9,9 +9,9 @@ Here's why:
 * Accuracy and Consistency: Automation ensures that every user account is created with precision and consistency. This reduces the chances of errors or discrepancies in user profiles, enhancing our data quality and overall security.
 * Resource Savings: Automating repetitive tasks will free up our IT team's valuable time and skills. This can be channeled into more strategic projects, ultimately leading to resource savings and a more productive IT department.
 
+## Implementation Plan
 
-
-
+Utilize Microsoft Forms to allow company representatives to input employee details. Upon form submission, it triggers a runbook on the domain controller to create a user, which is then replicated to Azure AD.
 
 
 ### Built With
