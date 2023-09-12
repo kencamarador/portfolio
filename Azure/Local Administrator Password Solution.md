@@ -8,8 +8,8 @@ LAPS addresses this issue by automatically generating distinct passwords for eac
 
 Windows LAPS is now available on the following OS platforms with the specified update or later installed:
 
-Windows 11 22H2 - April 11 2023 Update
-Windows 11 21H2 - April 11 2023 Update
-Windows 10 - April 11 2023 Update
-Windows Server 2022 - April 11 2023 Update
-Windows Server 2019 - April 11 2023 Update
+* Windows 11 22H2 - April 11 2023 Update
+* Windows 11 21H2 - April 11 2023 Update
+* Windows 10 - April 11 2023 Update
+* Windows Server 2022 - April 11 2023 Update
+* Windows Server 2019 - April 11 2023 Update
