@@ -88,13 +88,13 @@ Navigate to the "Review + Create" tab, where you can review the profile settings
 
 ## Key Takeaways
 
-* More information regarding LAPS via Intune can be found [here](https://learn.microsoft.com/en-us/mem/intune/protect/windows-laps-overview)
+* More information regarding LAPS via Intune can be found [here](https://learn.microsoft.com/en-us/mem/intune/protect/windows-laps-overview).
 * To manually rotate password. Go to Intune > Devices > Click Device > "Rotate Local Admin Password". The password can then be viewed on the left tab "Local Admin Password".
 * If you do decide to manually rotate the password, you will need to manually force sync that specific device by going doing the following: 
 1. Go to Settings -> click on Accounts -> click on Access work or school.
 2. Click on your Connected Organization. For example: Connected to "your Organization" Azure AD.
 3. Click on Info Button and click "Sync"
-* **Remember to test any changes thoroughly on non-production systems before implementing them in a production environment.**
+* I ran numerous testing to ensure that policies were being put into place. I created multiple VMs on VMWare to replicate our production environment. **Remember to test any changes thoroughly on non-production systems before implementing them in a production environment.**
 
 ## Next Steps and Future Improvements
 
