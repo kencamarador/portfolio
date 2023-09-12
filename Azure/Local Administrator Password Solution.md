@@ -84,3 +84,18 @@ c.	Reset password and reboot: Resets the password, backs up the new password to 
 **Review + Create**
 
 Navigate to the "Review + Create" tab, where you can review the profile settings. Once you've reviewed the profile and ensured it aligns with your requirements, click on the "Create" button. Upon clicking the "Create" button, the Windows LAPS policy will be generated and automatically assigned to the designated devices.
+
+
+## Key Takeaways
+
+* More information regarding LAPS via Intune can be found [here](https://learn.microsoft.com/en-us/mem/intune/protect/windows-laps-overview)
+* To manually rotate password. Go to Intune > Devices > Click Device > "Rotate Local Admin Password". The password can then be viewed on the left tab "Local Admin Password".
+* If you do decide to manually rotate the password, you will need to manually force sync that specific device by going doing the following: 
+1. Go to Settings -> click on Accounts -> click on Access work or school.
+2. Click on your Connected Organization. For example: Connected to "your Organization" Azure AD.
+3. Click on Info Button and click "Sync"
+* **Remember to test any changes thoroughly on non-production systems before implementing them in a production environment.**
+
+## Next Steps and Future Improvements
+
+* None at the moment.
