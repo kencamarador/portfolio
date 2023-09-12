@@ -13,3 +13,7 @@ Windows LAPS is now available on the following OS platforms with the specified u
 * Windows 10 - April 11 2023 Update
 * Windows Server 2022 - April 11 2023 Update
 * Windows Server 2019 - April 11 2023 Update
+
+## Implementation Plan
+
+With Microsoft Intune, I can leverage Endpoint Security to implement LAPS (Local Administrator Password Solution) within our organization. We'll establish a policy containing all the recommended configurations to enhance compliance and bolster security.
