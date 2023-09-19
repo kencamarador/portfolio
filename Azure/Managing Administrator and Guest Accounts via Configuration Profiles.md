@@ -39,8 +39,8 @@ Let's deactivate the built-in Administrator account on a Windows 10 or Windows 1
 
 **Basics Tab**
 
-Name – Disable & Rename Built in Local Administrator Account
-Description – This device configuration profile will deactivate the built-in local administrator account on Windows devices and additionally rename the built-in local administrator account.
+1. Name – Disable & Rename Built in Local Administrator Account
+2. Description – This device configuration profile will deactivate the built-in local administrator account on Windows devices and additionally rename the built-in local administrator account.
 
 ![Image Alt Text](../Images/Admin2.png)
 
