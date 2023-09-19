@@ -81,7 +81,7 @@ c.	Reset password and reboot: Resets the password, backs up the new password to 
 1.	Azure AD Security Group Creation: Begin by creating an Azure AD Security group that includes the users or devices on which this device configuration profile is intended to be deployed. It's important to note that if you include users in this group, the Windows LAPS policy will be applied to all devices associated with those users that are both joined to Azure AD and enrolled into Intune. If your intention is to deploy the policy to specific devices, it is advisable to add those devices directly to the Azure AD security group, rather than including users.
 2.	Deploying to All End User Devices: If your objective is to deploy this policy to all end user devices, you can simplify the process by selecting "+ Add all devices" to target all devices that are enrolled into Intune.
 
-**Review + Create**
+**Review & Create**
 
 Navigate to the "Review + Create" tab, where you can review the profile settings. Once you've reviewed the profile and ensured it aligns with your requirements, click on the "Create" button. Upon clicking the "Create" button, the Windows LAPS policy will be generated and automatically assigned to the designated devices.
 
