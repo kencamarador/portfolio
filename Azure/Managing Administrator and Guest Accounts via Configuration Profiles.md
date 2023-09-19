@@ -48,13 +48,19 @@ Let's deactivate the built-in Administrator account on a Windows 10 or Windows 1
 
 1. Click "Add Settings"
 2. Search for "Local Policies Security Options"
+
 ![Image Alt Text](../Images/Admin1.png)
+
 3. Click "Local Policies Security Options" and a window will expand on the bottom
 4. Check the policy settings: "Accounts Enable Administrator Account status“ & "Accounts Rename Administrator Account". For Guests, check the policy settings: "Accounts Enable Guest Account status“ & "Accounts Rename Guest Account"
+
 ![Image Alt Text](../Images/Admin3.png)
+
 5. Fill in the "Accounts Rename Administrator Account" field with a desired name. 
 6. Make sure "Accounts Enable Administrator Account Status" is toggled to "Disable"
+
 ![Image Alt Text](../Images/Admin4.png)
+
 7. Click Next
 
 **Assignments Tab**
