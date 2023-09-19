@@ -11,15 +11,23 @@ We currently utilize Intune to manage our devices and we can use Configuration P
 
 ## Implementation Plan
 
+Microsoft Intune allows us to efficiently manage our organization's settings. We will create two Configuration Policies: one for Administrators and one for Guests. These policies will include all the recommended configurations to enhance compliance and bolster security.
+
+In this Implementation Plan, I will focus solely on the "Disable & Rename Built-in Local Administrator Account" configuration profile, as the approach for Guests remains the same.
 
 ### Built With
+
+This project consisted of the following services
+
+![Azure](https://img.shields.io/badge/Azure-Intune-blue)
+![Azure](https://img.shields.io/badge/VMWare-Virtual_Machines-blue)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 
 
-### Step 1: Enable Windows LAPS via Intune
+### Step 1: Create a Configuration Profile
 
 Let's deactivate the built-in Administrator account on a Windows 10 or Windows 11 device through Intune. We'll achieve this by establishing a Device configuration profile and configuring the necessary settings from the Settings Catalog.
 
@@ -42,7 +50,7 @@ Description – This device configuration profile will deactivate the built-in l
 2. Search for "Local Policies Security Options"
 ![Image Alt Text](../Images/Admin1.png)
 3. Click "Local Policies Security Options" and a window will expand on the bottom
-4. Check the policy settings: "Accounts Enable Administrator Account status“ & "Accounts Rename Administrator Account"
+4. Check the policy settings: "Accounts Enable Administrator Account status“ & "Accounts Rename Administrator Account". For Guests, check the policy settings: "Accounts Enable Guest Account status“ & "Accounts Rename Guest Account"
 ![Image Alt Text](../Images/Admin3.png)
 5. Fill in the "Accounts Rename Administrator Account" field with a desired name. 
 6. Make sure "Accounts Enable Administrator Account Status" is toggled to "Disable"
